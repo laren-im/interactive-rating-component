@@ -1,2 +1,26 @@
-.attribution { font-size: 11px; text-align: center; }
+/*.attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+*/
+.attribution {
+    display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px, 600px;
+}
+
+.centerBox {
+    background-color: darkslategray;
+    color: white;
+    margin: 3em 10em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.centerBox img {
+    max-width: 2rem;
+}
