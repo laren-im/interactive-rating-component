@@ -5,17 +5,22 @@
     display: none;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 200px, 600px;
+    margin: 10px 100px;
 }
 
 .centerBox {
     background-color: darkslategray;
     color: white;
     margin: 3em 10em;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
 
@@ -23,4 +28,32 @@ body {
 
 .centerBox img {
     max-width: 2rem;
+}
+
+.centerBox form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
+}
+
+.ratings li {
+    background-color: navy;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.ratings button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 999px;
+    border: none;
 }
